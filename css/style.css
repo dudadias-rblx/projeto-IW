@@ -1,0 +1,365 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #19192c;
+  color: #f5f1fa;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background-color: #79cadc;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #1c1327;
+}
+.logo span { color: #1c1327; opacity: 0.6; }
+nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+nav a { color: #0f1e20; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+nav a:hover { opacity: 0.7; }
+
+/* HERO */
+.hero { padding: 64px 32px 48px; max-width: 640px; }
+.hero h1 { font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 16px; }
+.hero p { color: #6bb0cb; font-size: 1.05rem; margin: 0 0 24px; }
+.hero button {
+  background-color: #45a7e0; color: #131727; border: none;
+  padding: 12px 24px; border-radius: 8px; font-size: 1rem;
+  font-weight: 600; cursor: pointer;
+}
+
+/* CATEGORIAS */
+.categorias { display: flex; flex-wrap: wrap; gap: 20px; list-style: none; margin: 24px 0 0; padding: 0; }
+.categorias a { color: #aeeff9; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+.categorias a:hover { text-decoration: underline; }
+
+/* FILTROS */
+.filtros { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 32px 40px; }
+.filtros button {
+  background-color: #1b1c33; border: 1px solid #171928; color: #f5f1fa;
+  padding: 8px 16px; border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+}
+.filtros button.ativo { background-color: #7fd8e8; color: #12232a; border-color: #7fd8e8; }
+
+/* SEÇÕES DE CATEGORIA */
+.categoria-secao { padding: 0 32px 56px; }
+.categoria-secao h2 { font-family: Georgia, serif; font-size: 1.4rem; margin-bottom: 20px; }
+
+/* GRADE — aqui é onde os cards viram flex e ficam lado a lado */
+.grade {
+  display: flex;         /* ESSENCIAL: sem isso, os cards empilham */
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* CARD */
+.flex-lugar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;            /* se o .grade for menor que isso, os cards quebram linha */
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1c1b33;
+}
+.flex-imagem { 
+  width: 100%; 
+  height: 160px; 
+  object-fit: cover; 
+  display: block; }
+
+.flex-info { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+  padding: 16px; 
+  flex-grow: 1; }
+
+.flex-info h3 { 
+  margin: 0; 
+  color: #f5f1fa; 
+  font-size: 1.05rem; }
+
+.flex-info p { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #c0d7e3; 
+  font-size: 0.85rem; }
+
+.flex-detalhe { 
+  color: #7fd8e8; 
+  font-size: 0.8rem; }
+
+.flex-link {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: 12px; 
+  background-color: #3eace0; 
+  color: #1c1327;
+  text-decoration: none; 
+  font-weight: 600; 
+  font-size: 0.85rem;
+}
+.flex-link:hover { opacity: 0.85; }
+
+/* FOOTER */
+footer {
+  display: flex; justify-content: center; padding: 24px;
+  color: #a79bc4; font-size: 0.85rem; border-top: 1px solid #2c2340;
+}
+
+@media (max-width: 480px) {
+  nav ul { gap: 14px; }
+}
+
+
+.formulario {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  display: flex;              
+  flex-direction: column;
+  gap: 16px;
+}
+.formulario h2 { 
+  font-family: Georgia, serif; 
+  font-size: 1.4rem; 
+  margin: 0 0 4px; 
+  color: #79cadc
+}
+.formulario p { 
+  color: #d9eaec; 
+  font-size: 0.9rem;
+  margin: 0 0 12px; 
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.campo {
+  display: flex;        
+  flex-direction: column;
+  gap: 6px;
+}
+.campo label { 
+  font-size: 0.85rem; 
+  color: #efecf5; 
+}
+.campo input,
+.campo textarea {
+  background-color: #19192c;
+  border: 1px solid #2c2340;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #f5f1fa;
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.campo input:focus,
+.campo textarea:focus { 
+  outline: none; 
+  border-color: #2d92f1; }
+
+.formulario button {
+  background-color: #5bb0ff;
+  color: #131a45;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.formulario button:hover { opacity: 0.9; }
+
+.duas-colunas {
+  display: flex;              /* coloca imagem e texto lado a lado */
+  align-items: center;         /* alinha os dois verticalmente no centro */
+  gap: 32px;                     /* espaço entre a imagem e o texto */
+  padding: 48px 32px;
+}
+
+.imagem-contextualizacao {
+  width: 45%;              /* a imagem ocupa quase metade da largura */
+  height: 320px;
+  object-fit: contain;         /* preenche o espaço sem distorcer */
+  border-radius: 12px;
+  display: block;
+   background-color: #000;
+}
+
+.coluna-texto {
+  flex: 1;             /* o texto ocupa o espaço restante */
+}
+
+.coluna-texto h3 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+  color: #79cadc;
+ 
+}
+.coluna-texto p {
+  color: #fcfbff;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.conteudo-contextualizacao h2{
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: #79cadc;
+  margin: 0 0 12px;
+  margin-top: 0px;
+  padding-left: 32px;
+  
+}
+
+.conteudo-contextualizacao p{
+  color: #fcfbff;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 32px;
+}
+
+.conteudo-contextualizacao li {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.conteudo-contextualizacao h4 {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #79cadc;
+  margin: 0 0 8px;
+}
+
+.paragrafo-final {
+  color: #79cadc;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 32px;
+}
+
+.referencias {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.referencias a {
+  display: block;
+  background-color: #4db8e8;
+  color: #12121f;
+  padding: 14px 20px;
+  border-radius: 10px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+.referencias a:hover {
+  opacity: 0.85;
+}
+
+.secao-referencias h4 {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #79cadc;
+  margin: 0 0 8px;
+}
+
+.conteudo-orientacoes h3{
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+  margin-top: 30px;
+  color: #79cadc;
+ 
+}
+
+.conteudo-orientacoes p{
+   color: #fcfbff;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 32px;
+}
+
+.conteudo-orientacoes h2{
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: #79cadc;
+  margin: 0 0 12px;
+  margin-top: 40px;
+  padding-left: 32px;
+
+}
+
+.conteudo-orientacoes h4{
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #79cadc;
+  margin: 0 0 8px;
+  margin-top: 20px;
+}
+
+.conteudo-orientacoes li {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.conteudo-orientacoes ul {
+  padding-left: 32px;
+  margin-top: 30px;
+}
+
+.emalta {
+  display: flex;
+  flex-direction: column;
+}
+
+.gradeinicial {
+  display: flex;         /* ESSENCIAL: sem isso, os cards empilham */
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.imagem-hero {
+  width: 45%;              /* a imagem ocupa quase metade da largura */
+  height: 320px;
+  object-fit: contain;         /* preenche o espaço sem distorcer */
+  border-radius: 12px;
+  display: block;
+   background-color: #000;
+}
+
+.footer {
+  display: flex;                 /* organiza o conteúdo do footer */
+  flex-direction: column;         /* empilha texto em cima, links embaixo */
+  align-items: center;              /* centraliza tudo horizontalmente */
+  gap: 12px;
+  padding: 32px;
+  background-color: #0c1121;
+  color: #65c5da;
+  font-size: 0.85rem;
+  border-top: 1px solid #2c2340;
+}
+
+.footer p {
+  margin: 0;
+}
