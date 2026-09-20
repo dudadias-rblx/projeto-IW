@@ -136,9 +136,11 @@ footer {
 .formulario h2 { 
   font-family: Georgia, serif; 
   font-size: 1.4rem; 
-  margin: 0 0 4px; }
+  margin: 0 0 4px; 
+  color: #79cadc
+}
 .formulario p { 
-  color: #a79bc4; 
+  color: #d9eaec; 
   font-size: 0.9rem;
   margin: 0 0 12px; 
   font-family: 'Montserrat', sans-serif; 
@@ -151,7 +153,7 @@ footer {
 }
 .campo label { 
   font-size: 0.85rem; 
-  color: #a79bc4; 
+  color: #efecf5; 
 }
 .campo input,
 .campo textarea {
@@ -206,7 +208,7 @@ footer {
   font-size: 1.8rem;
   margin: 0 0 10px;
   color: #79cadc;
-  background-color: #205c69;
+ 
 }
 .coluna-texto p {
   color: #fcfbff;
@@ -223,7 +225,7 @@ footer {
   margin: 0 0 12px;
   margin-top: 0px;
   padding-left: 32px;
-  background-color: #205c69;
+  
 }
 
 .conteudo-contextualizacao p{
@@ -265,6 +267,7 @@ footer {
   color: #12121f;
   padding: 14px 20px;
   border-radius: 10px;
+  align-items: center;
   text-decoration: none;
   font-size: 0.95rem;
   margin-top: 20px;
@@ -286,7 +289,7 @@ footer {
   margin: 0 0 10px;
   margin-top: 30px;
   color: #79cadc;
-  background-color: #205c69;
+ 
 }
 
 .conteudo-orientacoes p{
@@ -304,7 +307,7 @@ footer {
   margin: 0 0 12px;
   margin-top: 40px;
   padding-left: 32px;
-  background-color: #205c69;
+
 }
 
 .conteudo-orientacoes h4{
