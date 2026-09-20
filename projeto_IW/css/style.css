@@ -35,7 +35,7 @@ nav a:hover { opacity: 0.7; }
 .hero h1 { font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 16px; }
 .hero p { color: #6bb0cb; font-size: 1.05rem; margin: 0 0 24px; }
 .hero button {
-  background-color: #45a7e0; color: #1c1327; border: none;
+  background-color: #45a7e0; color: #131727; border: none;
   padding: 12px 24px; border-radius: 8px; font-size: 1rem;
   font-weight: 600; cursor: pointer;
 }
@@ -48,7 +48,7 @@ nav a:hover { opacity: 0.7; }
 /* FILTROS */
 .filtros { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 32px 40px; }
 .filtros button {
-  background-color: #221b33; border: 1px solid #171928; color: #f5f1fa;
+  background-color: #1b1c33; border: 1px solid #171928; color: #f5f1fa;
   padding: 8px 16px; border-radius: 999px; font-size: 0.85rem; cursor: pointer;
 }
 .filtros button.ativo { background-color: #7fd8e8; color: #12232a; border-color: #7fd8e8; }
@@ -71,7 +71,7 @@ nav a:hover { opacity: 0.7; }
   width: 260px;            /* se o .grade for menor que isso, os cards quebram linha */
   border-radius: 12px;
   overflow: hidden;
-  background-color: #221b33;
+  background-color: #1c1b33;
 }
 .flex-imagem { 
   width: 100%; 
@@ -94,7 +94,7 @@ nav a:hover { opacity: 0.7; }
 .flex-info p { 
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: #a79bc4; 
+  color: #c0d7e3; 
   font-size: 0.85rem; }
 
 .flex-detalhe { 
