@@ -344,3 +344,19 @@ footer {
   display: block;
    background-color: #000;
 }
+
+.footer {
+  display: flex;                 /* organiza o conteúdo do footer */
+  flex-direction: column;         /* empilha texto em cima, links embaixo */
+  align-items: center;              /* centraliza tudo horizontalmente */
+  gap: 12px;
+  padding: 32px;
+  background-color: #0c1121;
+  color: #65c5da;
+  font-size: 0.85rem;
+  border-top: 1px solid #2c2340;
+}
+
+.footer p {
+  margin: 0;
+}
